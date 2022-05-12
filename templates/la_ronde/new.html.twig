@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter une Ronde{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Ajouter une Ronde</h1>
+
+    {{ include('la_ronde/_form.html.twig') }}
+
+    <a href="{{ path('app_la_ronde_index') }}">back to list</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
