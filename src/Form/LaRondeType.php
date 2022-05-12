@@ -48,7 +48,6 @@ class LaRondeType extends AbstractType
                 ])
             ->add('materiel',MaterielType::class, [
                 'label' => 'Récupération Matériel de ronde - Vérification - Début de Mission',
-                'required' => true,
                 'label_attr' => ['class' => 'h2 bg-info m-4 p-2 text-white'],
                 'attr' => ['class' => 'row m-3',],
                 ])

@@ -51,7 +51,7 @@ class LaRonde
 
     /**
      * @ORM\ManyToOne(targetEntity=Materiel::class, cascade={"persist"})
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $materiel;
 

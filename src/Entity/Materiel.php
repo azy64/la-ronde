@@ -20,10 +20,10 @@ class Materiel
     /**
      * @ORM\Column(type="boolean", nullable=true)
      */
-    private $keys;
+    private $cle;
 
     /**
-     * @ORM\Column(type="boolean")
+     * @ORM\Column(type="boolean", nullable=true)
      */
     private $radio;
 
@@ -35,17 +35,17 @@ class Materiel
     /**
      * @ORM\Column(type="boolean", nullable=true)
      */
-    private $round_controller;
+    private $ronde;
 
     /**
      * @ORM\Column(type="boolean", nullable=true)
      */
-    private $torch;
+    private $lamp;
 
     /**
      * @ORM\Column(type="boolean", nullable=true)
      */
-    private $key_car;
+    private $contact;
 
     /**
      * @ORM\Column(type="boolean", nullable=true)
@@ -57,14 +57,14 @@ class Materiel
         return $this->id;
     }
 
-    public function isKeys(): ?bool
+    public function isCle(): ?bool
     {
-        return $this->keys;
+        return $this->cle;
     }
 
-    public function setKeys(?bool $keys): self
+    public function setCle(?bool $keys): self
     {
-        $this->keys = $keys;
+        $this->cle = $keys;
 
         return $this;
     }
@@ -93,38 +93,38 @@ class Materiel
         return $this;
     }
 
-    public function isRoundController(): ?bool
+    public function isRonde(): ?bool
     {
-        return $this->round_controller;
+        return $this->ronde;
     }
 
-    public function setRoundController(?bool $round_controller): self
+    public function setRonde(?bool $round): self
     {
-        $this->round_controller = $round_controller;
+        $this->ronde = $round;
 
         return $this;
     }
 
-    public function isTorch(): ?bool
+    public function isLamp(): ?bool
     {
-        return $this->torch;
+        return $this->lamp;
     }
 
-    public function setTorch(?bool $torch): self
+    public function setLamp(?bool $torche): self
     {
-        $this->torch = $torch;
+        $this->lamp = $torche;
 
         return $this;
     }
 
-    public function isKeyCar(): ?bool
+    public function isContact(): ?bool
     {
-        return $this->key_car;
+        return $this->contact;
     }
 
-    public function setKeyCar(?bool $key_car): self
+    public function setContact(?bool $key_car): self
     {
-        $this->key_car = $key_car;
+        $this->contact = $key_car;
 
         return $this;
     }
