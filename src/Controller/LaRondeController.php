@@ -50,6 +50,9 @@ class LaRondeController extends AbstractController
             $manager->persist($laRonde);
             $manager->flush();*/
            // dd($laRonde->getMateriel());
+           //dd($laRonde);
+           //$laRonde->setMateriel(null);
+           var_dump($laRonde->getMateriel());
             $laRondeRepository->add($laRonde, true);
 
             return $this->redirectToRoute('app_la_ronde_index', [], Response::HTTP_SEE_OTHER);
