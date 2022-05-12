@@ -15,7 +15,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://github.com/azy64/la-ronde.git)
 
 
 ## Getting Started
@@ -30,7 +30,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-1. ` git https://github.com/azy64/travel.git `
+1. ` git https://github.com/azy64/la-ronde.git `
 2. ` symfony composer require ` to install all packages related to the project
 3. ` php bin/console doctrine:database:create ` to create database
 4. ` php bin/console  doctrine:migrations:migrate ` 
